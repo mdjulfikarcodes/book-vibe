@@ -17,8 +17,8 @@ const BooksProvider = ({children}: {children: ReactNode}) => {
     <BooksContext.Provider value={sharedData}>
         {children}
     </BooksContext.Provider>
-    );
-
+    )
+    
 };
 
 export default BooksProvider;

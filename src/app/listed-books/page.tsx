@@ -6,7 +6,10 @@ import { IBook } from '@/types/books.type';
 import React, { useContext, useState } from 'react';
 
 const ListedBooks = () => {
-    const { readBooks, wishList } = useContext(BooksContext);
+    const { readBooks, wishList } = useContext(BooksContext) as {
+        readBooks: IBook[];
+        wishList: IBook[];
+    };
 
     const [sortBy, setSortBy] = useState<"rating" | "pages" | "year">("rating")
 

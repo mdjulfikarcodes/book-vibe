@@ -1,7 +1,7 @@
 import { IBook } from '@/types/books.type';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+
 
 interface IBookCardProps {
     book: IBook
@@ -9,7 +9,7 @@ interface IBookCardProps {
 
 const ListedBooksCard = ({ book }: IBookCardProps) => {
     return (
-                <div className="group flex space-y-[25px] flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:flex-row">
+                <div className="group flex space-y-6.25 flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:flex-row">
 
             {/* Book Image */}
             <div className="relative h-72 w-full shrink-0 overflow-hidden bg-slate-100 md:h-auto md:w-56 lg:w-64">
